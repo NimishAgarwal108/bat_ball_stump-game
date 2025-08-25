@@ -49,3 +49,7 @@
       }
     }
   }
+  function showResult(playerChoice,computerChoice,resultMsg){
+    alert(`you have chosen ${playerChoice} and computer choice is ${computerChoice}\n${resultMsg}`);
+
+  }

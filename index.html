@@ -12,7 +12,7 @@
   <button onclick="
    let computerChoice=getcomputerChoice();
    let resultMsg=getResult('bat',computerChoice);
-  alert(`you have chosen bat and computer choice is ${computerChoice}\n${resultMsg}`);
+  showResult(showResult('Bat',computerChoice,resultMsg))
 ">Bat</button>
 
 
@@ -22,17 +22,14 @@
       
       computerChoice=getcomputerChoice();
       resultMsg=getResult('ball',computerChoice);
-
-  
-
-  alert(`you have chosen ball and computer choice is ${computerChoice}\n${resultMsg}`);
+      showResult('Ball',computerChoice,resultMsg)
 
   
   ">Ball</button>
   <button onclick="
    computerChoice=getcomputerChoice();
    resultMsg=getResult('stump',computerChoice);
-  alert(`you have chosen stump and computer choice is ${computerChoice}\n${resultMsg}`);
+   showResult('Stump',computerChoice,resultMsg)
   ">Stump</button>
 
   <script src="script.js"></script>
