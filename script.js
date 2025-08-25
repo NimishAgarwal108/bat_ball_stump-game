@@ -2,6 +2,9 @@
     win:0,
     loss:0,
     tie:0,
+    displayScore:function(){
+      return `wins:${score.win}, losses:${score.loss}, ties:${score.tie}`;
+    }
 
   };  
   function getcomputerChoice(){
@@ -72,7 +75,7 @@
     ${resultMsg}\n
     Your score is\n
 
-    wins:${score.win}, losses:${score.loss}, ties:${score.tie}`);
+    ${score.displayScore()}`);
 
   }
    
