@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+  <h1>BAT BALL STUMP GAME</h1>
+  <button onclick="
+  let randomNumber=Math.random()*3;
+  //this will generate random number 0 and 3
+   let computerChoice ='';
+  if(randomNumber>0 &&randomNumber<=1){
+    computerChoice = 'Bat';
+  }
+  else if(randomNumber>1 &&randomNumber<=2){
+     computerChoice='ball';  
+  }
+  else{
+     computerChoice='stump';
+  }
+  let resultMsg='';
+
+  if(computerChoice === 'ball'){
+     resultMsg='you win';
+    }
+
+  else if(computerChoice ==='Bat'){
+     resultMsg='match draw';
+  }
+  else{
+     resultMsg='you lose';
+  }
+
+  alert(`you have chosen bat and computer choice is ${computerChoice}\n${resultMsg}`);
+
+  
+    
+    
+">Bat</button>
+  <button onclick="
+     randomNumber=Math.random()*3;
+  //this will generate random number 0 and 3
+    computerChoice ='';
+  if(randomNumber>0 &&randomNumber<=1){
+    computerChoice = 'Bat';
+  }
+  else if(randomNumber>1 &&randomNumber<=2){
+     computerChoice='ball';  
+  }
+  else{
+     computerChoice='stump';
+  }
+   resultMsg='';
+
+  if(computerChoice === 'ball'){
+     resultMsg='match draw';
+    }
+
+  else if(computerChoice ==='Bat'){
+     resultMsg='you loss';
+  }
+  else{
+     resultMsg='you win';
+  }
+
+  alert(`you have chosen ball and computer choice is ${computerChoice}\n${resultMsg}`);
+
+  
+  ">Ball</button>
+  <button onclick="
+     randomNumber=Math.random()*3;
+  //this will generate random number 0 and 3
+   computerChoice ='';
+  if(randomNumber>0 &&randomNumber<=1){
+    computerChoice = 'Bat';
+  }
+  else if(randomNumber>1 &&randomNumber<=2){
+     computerChoice='ball';  
+  }
+  else{
+     computerChoice='stump';
+  }
+  resultMsg='';
+
+  if(computerChoice === 'ball'){
+     resultMsg='you loss';
+    }
+
+  else if(computerChoice ==='Bat'){
+     resultMsg='you win';
+  }
+  else{
+     resultMsg='natch draw';
+  }
+
+  alert(`you have chosen stump and computer choice is ${computerChoice}\n${resultMsg}`);
+
+  
+  
+  
+  ">Stump</button>
+
+  
+</body>
+</html>
