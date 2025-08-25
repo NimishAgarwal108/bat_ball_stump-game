@@ -10,7 +10,7 @@
 <body>
   <h1>BAT BALL STUMP GAME</h1>
   <button onclick="
-   getcomputerChoice();
+   let computerChoice=getcomputerChoice();
   
   let resultMsg='';
 
@@ -32,7 +32,8 @@
     
 ">Bat</button>
   <button onclick="
-      getcomputerChoice();
+      
+      computerChoice=getcomputerChoice();
 
   if(computerChoice === 'ball'){
      resultMsg='match draw';
@@ -50,8 +51,7 @@
   
   ">Ball</button>
   <button onclick="
-   getcomputerChoice();
-     
+   computerChoice=getcomputerChoice();
   if(computerChoice === 'ball'){
      resultMsg='you loss';
     }
