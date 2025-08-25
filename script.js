@@ -11,3 +11,41 @@
         return 'stump';
       }
   }
+
+  function getResult(playerChoice,computerChoice){
+  
+    if(playerChoice === 'Bat'){
+      if(computerChoice === 'ball'){
+     return 'you win';
+    }
+    else if(computerChoice ==='Bat'){
+      return 'match draw';
+    }
+    else{
+      return 'you lose';
+    }
+  }
+    else if(playerChoice === 'ball'){
+      if(computerChoice === 'stump'){
+        return 'you win';
+      }
+      else if(computerChoice === 'ball'){
+        return 'match draw';
+      }
+      else{
+        return 'you lose';
+      }
+    }
+      
+    else{
+      if(computerChoice === 'Bat'){
+        return 'you win';
+      }
+      else if(computerChoice === 'stump'){
+        return 'match draw';
+      }
+      else{
+        return 'you lose';
+      }
+    }
+  }

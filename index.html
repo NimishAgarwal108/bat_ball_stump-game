@@ -11,40 +11,19 @@
   <h1>BAT BALL STUMP GAME</h1>
   <button onclick="
    let computerChoice=getcomputerChoice();
-  
-  let resultMsg='';
-
-  if(computerChoice === 'ball'){
-     resultMsg='you win';
-    }
-
-  else if(computerChoice ==='Bat'){
-     resultMsg='match draw';
-  }
-  else{
-     resultMsg='you lose';
-  }
-
+   let resultMsg=getResult('bat',computerChoice);
   alert(`you have chosen bat and computer choice is ${computerChoice}\n${resultMsg}`);
-
-  
-    
-    
 ">Bat</button>
+
+
+
+
   <button onclick="
       
       computerChoice=getcomputerChoice();
+      resultMsg=getResult('ball',computerChoice);
 
-  if(computerChoice === 'ball'){
-     resultMsg='match draw';
-    }
-
-  else if(computerChoice ==='Bat'){
-     resultMsg='you loss';
-  }
-  else{
-     resultMsg='you win';
-  }
+  
 
   alert(`you have chosen ball and computer choice is ${computerChoice}\n${resultMsg}`);
 
@@ -52,22 +31,8 @@
   ">Ball</button>
   <button onclick="
    computerChoice=getcomputerChoice();
-  if(computerChoice === 'ball'){
-     resultMsg='you loss';
-    }
-
-  else if(computerChoice ==='Bat'){
-     resultMsg='you win';
-  }
-  else{
-     resultMsg='natch draw';
-  }
-
+   resultMsg=getResult('stump',computerChoice);
   alert(`you have chosen stump and computer choice is ${computerChoice}\n${resultMsg}`);
-
-  
-  
-  
   ">Stump</button>
 
   <script src="script.js"></script>
