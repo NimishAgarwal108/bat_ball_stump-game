@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cricket Game</title>
   <link rel="stylesheet" href="cricket.css">
 </head>
 <body>
-  <h1>BAT BALL STUMP GAME</h1>
-  <button onclick="
-   let computerChoice=getcomputerChoice();
-   let resultMsg=getResult('bat',computerChoice);
-  showResult(showResult('Bat',computerChoice,resultMsg))
-">Bat</button>
-
-
-
-
-  <button onclick="
-      
-      computerChoice=getcomputerChoice();
-      resultMsg=getResult('ball',computerChoice);
-      showResult('Ball',computerChoice,resultMsg)
-
-  
-  ">Ball</button>
-  <button onclick="
-   computerChoice=getcomputerChoice();
-   resultMsg=getResult('stump',computerChoice);
-   showResult('Stump',computerChoice,resultMsg)
-  ">Stump</button>
-
+  <div class="container">
+    <h1>BAT BALL STUMP GAME</h1>
+    <button onclick="
+      let computerChoice = getcomputerChoice();
+      let resultMsg = getResult('Bat', computerChoice);
+      showResult('Bat', computerChoice, resultMsg);
+    ">Bat</button>
+    <button onclick="
+      computerChoice = getcomputerChoice();
+      resultMsg = getResult('Ball', computerChoice);
+      showResult('Ball', computerChoice, resultMsg);
+    ">Ball</button>
+    <button onclick="
+      computerChoice = getcomputerChoice();
+      resultMsg = getResult('Stump', computerChoice);
+      showResult('Stump', computerChoice, resultMsg);
+    ">Stump</button>
+    <button onclick="
+      localStorage.clear();
+      resetScore();
+    ">RESET</button>
+    <div id="result" style="margin-top:30px;"></div>
+  </div>
   <script src="script.js"></script>
-
-  
 </body>
-</html>
