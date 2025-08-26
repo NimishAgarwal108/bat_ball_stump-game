@@ -6,6 +6,7 @@ score.displayScore = function () {
   return `wins: ${score.win}, losses: ${score.loss}, ties: ${score.tie}`;
 };
 
+
 function resetScore() {
   score = { win: 0, loss: 0, tie: 0 };
   score.displayScore = function () {
